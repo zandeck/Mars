@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "Random.hpp"
 #include <cmath>
+#include "PayOffs.hpp"
 
 double SimpleMonteCarlo(double Expiry,
                         double Strike,
