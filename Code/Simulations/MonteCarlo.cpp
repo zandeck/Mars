@@ -8,8 +8,8 @@
 
 #include "MonteCarlo.hpp"
 
-double SimpleMonteCarlo(double Expiry,
-                        double Strike,
+double SimpleMonteCarlo(const PayOff& thePayOff,
+                        double Expiry,
                         double Spot,
                         double Vol,
                         double r,
@@ -26,8 +26,7 @@ double SimpleMonteCarlo(double Expiry,
     for (unsigned long i = 0; i < NumberOfPaths; i++) {
         double thisGaussian = GetOneGaussianByBoxMuller();
         thisSpot = movedSpot * exp(rootVariance * thisGaussian);
-        double thisPayoff = thisSpot - Strike;
-        thisPayoff = thisPayoff > 0 ? thisPayoff : 0;
+        double thisPayoff = thePayOff(thisSpot);
         runningSum += thisPayoff;
     }
     

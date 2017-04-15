@@ -14,8 +14,8 @@
 #include <cmath>
 #include "PayOffs.hpp"
 
-double SimpleMonteCarlo(double Expiry,
-                        double Strike,
+double SimpleMonteCarlo(const PayOff& thePayOff,
+                        double Expiry,
                         double Spot,
                         double Vol,
                         double r,
