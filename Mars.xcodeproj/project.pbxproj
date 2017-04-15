@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
+		22D64D061EA2222000D93A03 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D041EA2222000D93A03 /* Random.cpp */; };
+		22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D091EA225E200D93A03 /* MonteCarlo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		2292F0D21EA2183E006B2473 /* Mars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mars; sourceTree = BUILT_PRODUCTS_DIR; };
 		2292F0D51EA2183E006B2473 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22D64D041EA2222000D93A03 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
+		22D64D051EA2222000D93A03 /* Random.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Random.hpp; path = ../Code/Generators/Random.hpp; sourceTree = "<group>"; };
+		22D64D091EA225E200D93A03 /* MonteCarlo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarlo.cpp; sourceTree = "<group>"; };
+		22D64D0A1EA225E200D93A03 /* MonteCarlo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MonteCarlo.hpp; path = ../Code/Simulations/MonteCarlo.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,8 @@
 		2292F0C91EA2183D006B2473 = {
 			isa = PBXGroup;
 			children = (
+				22D64CFA1EA2199300D93A03 /* Code */,
+				22D64CF91EA2198200D93A03 /* Headers */,
 				2292F0D41EA2183E006B2473 /* Mars */,
 				2292F0D31EA2183E006B2473 /* Products */,
 			);
@@ -60,6 +68,56 @@
 				2292F0D51EA2183E006B2473 /* main.cpp */,
 			);
 			path = Mars;
+			sourceTree = "<group>";
+		};
+		22D64CF91EA2198200D93A03 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D081EA225BB00D93A03 /* Simulations */,
+				22D64D031EA2212300D93A03 /* Generators */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		22D64CFA1EA2199300D93A03 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D071EA225B200D93A03 /* Simulations */,
+				22D64D021EA2210D00D93A03 /* Generators */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		22D64D021EA2210D00D93A03 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D041EA2222000D93A03 /* Random.cpp */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		22D64D031EA2212300D93A03 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D051EA2222000D93A03 /* Random.hpp */,
+			);
+			name = Generators;
+			sourceTree = "<group>";
+		};
+		22D64D071EA225B200D93A03 /* Simulations */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D091EA225E200D93A03 /* MonteCarlo.cpp */,
+			);
+			path = Simulations;
+			sourceTree = "<group>";
+		};
+		22D64D081EA225BB00D93A03 /* Simulations */ = {
+			isa = PBXGroup;
+			children = (
+				22D64D0A1EA225E200D93A03 /* MonteCarlo.hpp */,
+			);
+			name = Simulations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
+				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +306,7 @@
 				2292F0DB1EA2183E006B2473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
