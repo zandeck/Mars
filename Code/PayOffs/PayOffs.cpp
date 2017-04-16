@@ -8,36 +8,20 @@
 
 #include "PayOffs.hpp"
 
-PayOff::PayOff(const double Strike_, const OptionType TheOptionsType_) : Strike(Strike_), TheOptionsType(TheOptionsType_)
+PayOffCall::PayOffCall(double Strike_) : Strike(Strike_)
 {
 }
 
-PayOff::PayOff(const double Strike1_, const double Strike2_, const OptionType TheOptionsType_) : Strike(Strike1_), Strike2(Strike2_), TheOptionsType(TheOptionsType_)
+PayOffPut::PayOffPut(double Strike_) : Strike(Strike_)
 {
 }
 
-double PayOff::operator()(const double spot) const
+double PayOffCall::operator()(double Spot) const
 {
-    switch (TheOptionsType) {
-        case call:
-            return max(spot - Strike, 0.0);
-            break;
-            
-        case put:
-            return max(Strike - spot, 0.0);
-            break;
-            
-            
-        case digital:
-            return (spot - Strike > 0) ? 1.0 : 0.0;
-            break;
-            
-        case doubleDigital:
-            return ((spot > Strike) && (spot < Strike2)) ? 1 : 0;
-            break;
-            
-        default:
-            throw("unknow type of option");
-            break;
-    }
+    return max(Spot - Strike, 0.0);
+}
+
+double PayOffPut::operator()(double Spot) const
+{
+    return max(Strike - Spot, 0.0);
 }

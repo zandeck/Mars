@@ -16,17 +16,34 @@
 using namespace std;
 
 class PayOff {
-    
 public:
-    enum OptionType {call, put, digital, doubleDigital};
-    PayOff(const double Strike_, const OptionType TheOptionsType_);
-    PayOff(const double Strike1_, const double Strike2_, const OptionType TheOptionsType_);
-    double operator() (const double Spot) const;
-
-private:
-    double Strike, Strike2;
-    OptionType TheOptionsType;
-
+    PayOff(){};
+    virtual double operator()(double Spot) const = 0;
+    virtual ~PayOff(){}
 };
+
+
+class PayOffCall : public PayOff {
+public:
+    PayOffCall(double Strike_);
+    virtual double operator()(double Spot) const;
+    virtual ~PayOffCall(){};
+    
+private:
+    double Strike;
+};
+
+
+class PayOffPut : public PayOff {
+public:
+    PayOffPut(double Strike);
+    virtual double operator()(double Spot) const;
+    virtual ~PayOffPut(){}
+    
+private:
+    double Strike;
+};
+
+
 
 #endif /* PayOffs_hpp */
