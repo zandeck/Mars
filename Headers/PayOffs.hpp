@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <algorithm>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -44,6 +45,39 @@ private:
     double Strike;
 };
 
+class PayOffDoubleDigit : public PayOff
+{
+public:
+    PayOffDoubleDigit(double LowerLevel_, double UpperLevel_);
+    virtual double operator()(double Spot) const;
+    virtual ~PayOffDoubleDigit(){}
+    
+private:
+    double LowerLevel;
+    double UpperLevel;
+};
 
+class PayOffPower : public PayOff
+{
+public:
+    PayOffPower(double Strike_, double Alpha_);
+    virtual double operator()(double Spot) const;
+    virtual ~PayOffPower(){}
+    
+private:
+    double Strike;
+    double Alpha;
+};
+
+class PayOffDigit : public PayOff
+{
+public:
+    PayOffDigit(double Strike_);
+    virtual double operator()(double Spot) const;
+    virtual ~PayOffDigit(){}
+    
+private:
+    double Strike;
+};
 
 #endif /* PayOffs_hpp */
