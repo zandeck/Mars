@@ -31,7 +31,23 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "VanillaOption::VanillaOption(PayOff&amp; ThePayOff_, double Expiry_)"
+            landmarkName = "VanillaOption::VanillaOption(PayOffBridge&amp; ThePayOff_, double Expiry_)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Code/PayOffBridge.cpp"
+            timestampString = "514130385.628782"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "PayOffBridge::operator=(const PayOffBridge &amp;original)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

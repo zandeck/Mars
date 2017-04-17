@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228EDE881EA4E52A0007645B /* VanillaOption.cpp */; };
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
+		22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */; };
 		22D64D061EA2222000D93A03 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D041EA2222000D93A03 /* Random.cpp */; };
 		22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D091EA225E200D93A03 /* MonteCarlo.cpp */; };
 		22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D0E1EA22CDE00D93A03 /* PayOffs.cpp */; };
@@ -31,6 +32,8 @@
 		228EDE891EA4E52A0007645B /* VanillaOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VanillaOption.hpp; path = ../Headers/VanillaOption.hpp; sourceTree = "<group>"; };
 		2292F0D21EA2183E006B2473 /* Mars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mars; sourceTree = BUILT_PRODUCTS_DIR; };
 		2292F0D51EA2183E006B2473 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PayOffBridge.cpp; sourceTree = "<group>"; };
+		22B395901EA4F92B003948B4 /* PayOffBridge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PayOffBridge.hpp; sourceTree = "<group>"; };
 		22D64D041EA2222000D93A03 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
 		22D64D051EA2222000D93A03 /* Random.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Random.hpp; sourceTree = "<group>"; };
 		22D64D091EA225E200D93A03 /* MonteCarlo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarlo.cpp; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				22D64D021EA2210D00D93A03 /* Generators */,
 				228EDE881EA4E52A0007645B /* VanillaOption.cpp */,
 				228EDE891EA4E52A0007645B /* VanillaOption.hpp */,
+				22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */,
+				22B395901EA4F92B003948B4 /* PayOffBridge.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
 				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
+				22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

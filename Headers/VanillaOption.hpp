@@ -11,16 +11,14 @@
 
 #include <stdio.h>
 #include "PayOffs.hpp"
+#include "PayOffBridge.hpp"
 
 class VanillaOption {
     double Expiry;
-    PayOff* ThePayOff;
+    PayOffBridge ThePayOff;
     
 public:
-    VanillaOption(PayOff& ThePayOff_, double Expiry_);
-    VanillaOption(const VanillaOption& original);
-    VanillaOption& operator=(const VanillaOption& original);
-    ~VanillaOption();
+    VanillaOption(const PayOffBridge& ThePayOff_, double Expiry_);
     
     double GetExpiry() const;
     double OptionPayOff(double Spot) const;
