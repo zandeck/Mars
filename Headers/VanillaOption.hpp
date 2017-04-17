@@ -10,5 +10,20 @@
 #define VanillaOption_hpp
 
 #include <stdio.h>
+#include "PayOffs.hpp"
+
+class VanillaOption {
+    double Expiry;
+    PayOff* ThePayOff;
+    
+public:
+    VanillaOption(PayOff& ThePayOff_, double Expiry_);
+    VanillaOption(const VanillaOption& original);
+    VanillaOption& operator=(const VanillaOption& original);
+    ~VanillaOption();
+    
+    double GetExpiry() const;
+    double OptionPayOff(double Spot) const;
+};
 
 #endif /* VanillaOption_hpp */

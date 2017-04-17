@@ -53,3 +53,23 @@ double PayOffDigit::operator()(double Spot) const
 {
     return (Spot > Strike) ? 1 : 0;
 }
+
+PayOff* PayOffCall::clone() const {
+    return new PayOffCall(*this);
+}
+
+PayOff* PayOffPut::clone() const {
+    return new PayOffPut(*this);
+}
+
+PayOff* PayOffDoubleDigit::clone() const {
+    return new PayOffDoubleDigit(*this);
+}
+
+PayOff* PayOffPower::clone() const {
+    return new PayOffPower(*this);
+}
+
+PayOff* PayOffDigit::clone() const {
+    return new PayOffDigit(*this);
+}
