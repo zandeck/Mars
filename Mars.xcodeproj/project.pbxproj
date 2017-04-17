@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228EDE881EA4E52A0007645B /* VanillaOption.cpp */; };
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
 		22D64D061EA2222000D93A03 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D041EA2222000D93A03 /* Random.cpp */; };
 		22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D091EA225E200D93A03 /* MonteCarlo.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		228EDE881EA4E52A0007645B /* VanillaOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VanillaOption.cpp; sourceTree = "<group>"; };
+		228EDE891EA4E52A0007645B /* VanillaOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VanillaOption.hpp; sourceTree = "<group>"; };
 		2292F0D21EA2183E006B2473 /* Mars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mars; sourceTree = BUILT_PRODUCTS_DIR; };
 		2292F0D51EA2183E006B2473 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22D64D041EA2222000D93A03 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		22D64CF91EA2198200D93A03 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				228EDE891EA4E52A0007645B /* VanillaOption.hpp */,
 				22D64D0F1EA22CDE00D93A03 /* PayOffs.hpp */,
 				22D64D081EA225BB00D93A03 /* Simulations */,
 				22D64D031EA2212300D93A03 /* Generators */,
@@ -89,6 +93,7 @@
 				22D64D0E1EA22CDE00D93A03 /* PayOffs.cpp */,
 				22D64D071EA225B200D93A03 /* Simulations */,
 				22D64D021EA2210D00D93A03 /* Generators */,
+				228EDE881EA4E52A0007645B /* VanillaOption.cpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */,
+				228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */,
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
 				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
