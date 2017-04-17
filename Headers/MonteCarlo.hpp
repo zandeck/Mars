@@ -14,11 +14,13 @@
 #include <cmath>
 #include "PayOffs.hpp"
 #include "VanillaOption.hpp"
+#include "Parameters.hpp"
+#include "PiecewiseConstantParameter.hpp"
 
 double SimpleMonteCarlo(const VanillaOption& TheOption,
                         double Spot,
-                        double Vol,
-                        double r,
+                        const ParametersConstant& Vol,
+                        const ParametersConstant& r,
                         unsigned long NumberOfPaths);
 
 #endif /* MonteCarlo_hpp */

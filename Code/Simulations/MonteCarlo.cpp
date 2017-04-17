@@ -10,16 +10,16 @@
 
 double SimpleMonteCarlo(const VanillaOption& TheOption,
                         double Spot,
-                        double Vol,
-                        double r,
+                        const ParametersConstant& Vol,
+                        const ParametersConstant& r,
                         unsigned long NumberOfPaths)
 {
     double Expiry = TheOption.GetExpiry();
-    double variance = Vol * Vol * Expiry;
+    double variance = Vol.IntegralSquare(0, Expiry);
     double rootVariance = sqrt(variance);
     double itoCorrection = -0.5 * variance;
     
-    double movedSpot = Spot * exp(r * Expiry + itoCorrection);
+    double movedSpot = Spot * exp(r.Integral(0, Expiry) + itoCorrection);
     double thisSpot;
     double runningSum = 0;
     
@@ -32,7 +32,7 @@ double SimpleMonteCarlo(const VanillaOption& TheOption,
     }
     
     double mean = runningSum / NumberOfPaths;
-    mean *= exp(-r * Expiry);
+    mean *= exp(-r.Integral(0, Expiry) * Expiry);
     
     return mean;
 }

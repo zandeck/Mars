@@ -10,6 +10,8 @@
 		228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228EDE881EA4E52A0007645B /* VanillaOption.cpp */; };
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
 		22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */; };
+		22B395941EA5038B003948B4 /* Parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B395921EA5038B003948B4 /* Parameters.cpp */; };
+		22B395971EA50912003948B4 /* PiecewiseConstantParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B395951EA50912003948B4 /* PiecewiseConstantParameter.cpp */; };
 		22D64D061EA2222000D93A03 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D041EA2222000D93A03 /* Random.cpp */; };
 		22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D091EA225E200D93A03 /* MonteCarlo.cpp */; };
 		22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D0E1EA22CDE00D93A03 /* PayOffs.cpp */; };
@@ -34,6 +36,10 @@
 		2292F0D51EA2183E006B2473 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PayOffBridge.cpp; sourceTree = "<group>"; };
 		22B395901EA4F92B003948B4 /* PayOffBridge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PayOffBridge.hpp; sourceTree = "<group>"; };
+		22B395921EA5038B003948B4 /* Parameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parameters.cpp; sourceTree = "<group>"; };
+		22B395931EA5038B003948B4 /* Parameters.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parameters.hpp; sourceTree = "<group>"; };
+		22B395951EA50912003948B4 /* PiecewiseConstantParameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PiecewiseConstantParameter.cpp; sourceTree = "<group>"; };
+		22B395961EA50912003948B4 /* PiecewiseConstantParameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PiecewiseConstantParameter.hpp; sourceTree = "<group>"; };
 		22D64D041EA2222000D93A03 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
 		22D64D051EA2222000D93A03 /* Random.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Random.hpp; sourceTree = "<group>"; };
 		22D64D091EA225E200D93A03 /* MonteCarlo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarlo.cpp; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 				228EDE891EA4E52A0007645B /* VanillaOption.hpp */,
 				22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */,
 				22B395901EA4F92B003948B4 /* PayOffBridge.hpp */,
+				22B395921EA5038B003948B4 /* Parameters.cpp */,
+				22B395931EA5038B003948B4 /* Parameters.hpp */,
+				22B395951EA50912003948B4 /* PiecewiseConstantParameter.cpp */,
+				22B395961EA50912003948B4 /* PiecewiseConstantParameter.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -192,11 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B395971EA50912003948B4 /* PiecewiseConstantParameter.cpp in Sources */,
 				22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */,
 				228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */,
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
 				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
+				22B395941EA5038B003948B4 /* Parameters.cpp in Sources */,
 				22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
