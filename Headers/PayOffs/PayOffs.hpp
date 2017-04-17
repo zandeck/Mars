@@ -20,6 +20,7 @@ class PayOff {
 public:
     PayOff(){};
     virtual double operator()(double Spot) const = 0;
+    virtual PayOff* clone() const = 0;
     virtual ~PayOff(){}
 };
 
@@ -28,6 +29,7 @@ class PayOffCall : public PayOff {
 public:
     PayOffCall(double Strike_);
     virtual double operator()(double Spot) const;
+    virtual PayOff* clone() const;
     virtual ~PayOffCall(){};
     
 private:
@@ -39,6 +41,7 @@ class PayOffPut : public PayOff {
 public:
     PayOffPut(double Strike);
     virtual double operator()(double Spot) const;
+    virtual PayOff* clone() const;
     virtual ~PayOffPut(){}
     
 private:
@@ -50,6 +53,7 @@ class PayOffDoubleDigit : public PayOff
 public:
     PayOffDoubleDigit(double LowerLevel_, double UpperLevel_);
     virtual double operator()(double Spot) const;
+    virtual PayOff* clone() const;
     virtual ~PayOffDoubleDigit(){}
     
 private:
@@ -62,6 +66,7 @@ class PayOffPower : public PayOff
 public:
     PayOffPower(double Strike_, double Alpha_);
     virtual double operator()(double Spot) const;
+    virtual PayOff* clone() const;
     virtual ~PayOffPower(){}
     
 private:
@@ -74,6 +79,7 @@ class PayOffDigit : public PayOff
 public:
     PayOffDigit(double Strike_);
     virtual double operator()(double Spot) const;
+    virtual PayOff* clone() const;
     virtual ~PayOffDigit(){}
     
 private:
