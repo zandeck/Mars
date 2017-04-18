@@ -56,10 +56,10 @@ int main(int argc, const char * argv[]) {
     cout << "Price of the option call: " << resultPricingCall << endl;
     cout << "Price of the option put: " << resultPricingPut << endl;
     cout << "Price of the option digit: " << resultPricingDigit << endl;
-    
-    PiecewiseConstantParameter param(vector<double> {0,1,2,3,4}, vector<double> {1,0,2,3});
-    
-    cout << param.IntegralSquare(3.5, 3.75) << endl;
+//    
+//    PiecewiseConstantParameter param(vector<double> {0,1,2,3,4}, vector<double> {1,0,2,3});
+//    
+//    cout << param.IntegralSquare(3.5, 3.75) << endl;
     
     return 0;
 }
