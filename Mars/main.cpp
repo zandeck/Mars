@@ -44,22 +44,24 @@ int main(int argc, const char * argv[]) {
     VanillaOption thePut(thePayOffPut, Expiry);
     VanillaOption theDigit(thePayOffDigit, Expiry);
     
+    StatisticsMean gatherer;
+    
     start = clock();
     
-    double resultPricingCall = SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths);
-    double resultPricingPut = SimpleMonteCarlo(thePut, Spot, Vol, r, NumberOfPaths);
-    double resultPricingDigit = SimpleMonteCarlo(theDigit, Spot, Vol, r, NumberOfPaths);
+    SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths, gatherer);
     duration = (clock() - start) / (double) CLOCKS_PER_SEC;
     
     cout << "Time for pricing the options : " << duration << endl;
     
-    cout << "Price of the option call: " << resultPricingCall << endl;
-    cout << "Price of the option put: " << resultPricingPut << endl;
-    cout << "Price of the option digit: " << resultPricingDigit << endl;
-//    
-//    PiecewiseConstantParameter param(vector<double> {0,1,2,3,4}, vector<double> {1,0,2,3});
-//    
-//    cout << param.IntegralSquare(3.5, 3.75) << endl;
+    vector<vector<double> > results = gatherer.GetResultsSoFar();
+    
+    for (unsigned long i = 0; i < results.size(); i++) {
+        for (unsigned long j = 0; j < results[i].size(); j++) {
+            cout << results[i][j] << ' ';
+        }
+        cout << endl;
+    }
+    
     
     return 0;
 }
