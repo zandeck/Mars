@@ -221,8 +221,6 @@
 				22B395981EA529BF003948B4 /* Parameters */,
 				22D64D071EA225B200D93A03 /* Simulations */,
 				22D64D021EA2210D00D93A03 /* Generators */,
-				221997551EA6949D0010F816 /* AntiThetic.cpp */,
-				221997561EA6949D0010F816 /* AntiThetic.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -233,6 +231,7 @@
 				2219974F1EA67F750010F816 /* Normals.cpp */,
 				2219974C1EA67CAB0010F816 /* RandomBase.cpp */,
 				221997521EA68DAF0010F816 /* ParkMiller.cpp */,
+				221997551EA6949D0010F816 /* AntiThetic.cpp */,
 				22D64D041EA2222000D93A03 /* Random.cpp */,
 			);
 			path = Generators;
@@ -243,6 +242,7 @@
 			children = (
 				221997501EA67F750010F816 /* Normals.hpp */,
 				221997531EA68DAF0010F816 /* ParkMiller.hpp */,
+				221997561EA6949D0010F816 /* AntiThetic.hpp */,
 				2219974D1EA67CAB0010F816 /* RandomBase.hpp */,
 				22D64D051EA2222000D93A03 /* Random.hpp */,
 			);
