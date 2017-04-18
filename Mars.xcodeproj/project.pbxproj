@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		221997431EA605470010F816 /* Wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997411EA605470010F816 /* Wrapper.cpp */; };
 		221997461EA60C0D0010F816 /* ConvergenceTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997441EA60C0D0010F816 /* ConvergenceTable.cpp */; };
+		221997491EA66BFF0010F816 /* Arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997471EA66BFF0010F816 /* Arrays.cpp */; };
 		228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228EDE881EA4E52A0007645B /* VanillaOption.cpp */; };
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
 		22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */; };
@@ -37,6 +38,8 @@
 		221997421EA605470010F816 /* Wrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Wrapper.hpp; sourceTree = "<group>"; };
 		221997441EA60C0D0010F816 /* ConvergenceTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvergenceTable.cpp; sourceTree = "<group>"; };
 		221997451EA60C0D0010F816 /* ConvergenceTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConvergenceTable.hpp; sourceTree = "<group>"; };
+		221997471EA66BFF0010F816 /* Arrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arrays.cpp; sourceTree = "<group>"; };
+		221997481EA66BFF0010F816 /* Arrays.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Arrays.hpp; sourceTree = "<group>"; };
 		228EDE881EA4E52A0007645B /* VanillaOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VanillaOption.cpp; sourceTree = "<group>"; };
 		228EDE891EA4E52A0007645B /* VanillaOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VanillaOption.hpp; sourceTree = "<group>"; };
 		2292F0D21EA2183E006B2473 /* Mars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mars; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +191,8 @@
 				22B395981EA529BF003948B4 /* Parameters */,
 				22D64D071EA225B200D93A03 /* Simulations */,
 				22D64D021EA2210D00D93A03 /* Generators */,
+				221997471EA66BFF0010F816 /* Arrays.cpp */,
+				221997481EA66BFF0010F816 /* Arrays.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B395971EA50912003948B4 /* PiecewiseConstantParameter.cpp in Sources */,
+				221997491EA66BFF0010F816 /* Arrays.cpp in Sources */,
 				22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */,
 				228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */,
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
@@ -388,6 +394,7 @@
 		2292F0DA1EA2183E006B2473 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "RANGE_CHECKING=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
