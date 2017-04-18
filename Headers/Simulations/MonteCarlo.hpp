@@ -17,6 +17,7 @@
 #include "Parameters.hpp"
 #include "PiecewiseConstantParameter.hpp"
 #include "StatisticsMC.hpp"
+#include "ConvergenceTable.hpp"
 
 void SimpleMonteCarlo(const VanillaOption& TheOption,
                         double Spot,

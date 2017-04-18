@@ -45,15 +45,16 @@ int main(int argc, const char * argv[]) {
     VanillaOption theDigit(thePayOffDigit, Expiry);
     
     StatisticsMean gatherer;
+    ConvergenceTable gathererTwo(gatherer);
     
     start = clock();
     
-    SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths, gatherer);
+    SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths, gathererTwo);
     duration = (clock() - start) / (double) CLOCKS_PER_SEC;
     
     cout << "Time for pricing the options : " << duration << endl;
     
-    vector<vector<double> > results = gatherer.GetResultsSoFar();
+    vector<vector<double> > results = gathererTwo.GetResultsSoFar();
     
     for (unsigned long i = 0; i < results.size(); i++) {
         for (unsigned long j = 0; j < results[i].size(); j++) {
