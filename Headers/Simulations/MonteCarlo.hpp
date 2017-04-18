@@ -18,12 +18,16 @@
 #include "PiecewiseConstantParameter.hpp"
 #include "StatisticsMC.hpp"
 #include "ConvergenceTable.hpp"
+#include "RandomBase.hpp"
+#include "AntiThetic.hpp"
+#include "ParkMiller.hpp"
 
 void SimpleMonteCarlo(const VanillaOption& TheOption,
                         double Spot,
                         const ParametersConstant& Vol,
                         const ParametersConstant& r,
                         unsigned long NumberOfPaths,
-                        StatisticsMC& gatherer);
+                        StatisticsMC& gatherer,
+                        RandomBase& generator);
 
 #endif /* MonteCarlo_hpp */

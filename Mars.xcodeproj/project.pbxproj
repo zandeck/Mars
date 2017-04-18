@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		221997431EA605470010F816 /* Wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997411EA605470010F816 /* Wrapper.cpp */; };
 		221997461EA60C0D0010F816 /* ConvergenceTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997441EA60C0D0010F816 /* ConvergenceTable.cpp */; };
+		221997491EA66BFF0010F816 /* Arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997471EA66BFF0010F816 /* Arrays.cpp */; };
+		2219974E1EA67CAB0010F816 /* RandomBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2219974C1EA67CAB0010F816 /* RandomBase.cpp */; };
+		221997511EA67F750010F816 /* Normals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2219974F1EA67F750010F816 /* Normals.cpp */; };
+		221997541EA68DAF0010F816 /* ParkMiller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997521EA68DAF0010F816 /* ParkMiller.cpp */; };
+		221997571EA6949D0010F816 /* AntiThetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221997551EA6949D0010F816 /* AntiThetic.cpp */; };
 		228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228EDE881EA4E52A0007645B /* VanillaOption.cpp */; };
 		2292F0D61EA2183E006B2473 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2292F0D51EA2183E006B2473 /* main.cpp */; };
 		22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */; };
@@ -37,6 +42,16 @@
 		221997421EA605470010F816 /* Wrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Wrapper.hpp; sourceTree = "<group>"; };
 		221997441EA60C0D0010F816 /* ConvergenceTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvergenceTable.cpp; sourceTree = "<group>"; };
 		221997451EA60C0D0010F816 /* ConvergenceTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConvergenceTable.hpp; sourceTree = "<group>"; };
+		221997471EA66BFF0010F816 /* Arrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arrays.cpp; sourceTree = "<group>"; };
+		221997481EA66BFF0010F816 /* Arrays.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Arrays.hpp; sourceTree = "<group>"; };
+		2219974C1EA67CAB0010F816 /* RandomBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomBase.cpp; sourceTree = "<group>"; };
+		2219974D1EA67CAB0010F816 /* RandomBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RandomBase.hpp; sourceTree = "<group>"; };
+		2219974F1EA67F750010F816 /* Normals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Normals.cpp; sourceTree = "<group>"; };
+		221997501EA67F750010F816 /* Normals.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Normals.hpp; sourceTree = "<group>"; };
+		221997521EA68DAF0010F816 /* ParkMiller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParkMiller.cpp; sourceTree = "<group>"; };
+		221997531EA68DAF0010F816 /* ParkMiller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParkMiller.hpp; sourceTree = "<group>"; };
+		221997551EA6949D0010F816 /* AntiThetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AntiThetic.cpp; sourceTree = "<group>"; };
+		221997561EA6949D0010F816 /* AntiThetic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AntiThetic.hpp; sourceTree = "<group>"; };
 		228EDE881EA4E52A0007645B /* VanillaOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VanillaOption.cpp; sourceTree = "<group>"; };
 		228EDE891EA4E52A0007645B /* VanillaOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VanillaOption.hpp; sourceTree = "<group>"; };
 		2292F0D21EA2183E006B2473 /* Mars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mars; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2219974A1EA67C400010F816 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				221997471EA66BFF0010F816 /* Arrays.cpp */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2219974B1EA67C500010F816 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				221997481EA66BFF0010F816 /* Arrays.hpp */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		2292F0C91EA2183D006B2473 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +200,7 @@
 		22D64CF91EA2198200D93A03 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2219974B1EA67C500010F816 /* Tools */,
 				22B395A51EA5FE49003948B4 /* Statistics */,
 				22B3959D1EA52BAE003948B4 /* PayOffs */,
 				22B3959C1EA52BA3003948B4 /* Parameters */,
@@ -182,6 +214,7 @@
 		22D64CFA1EA2199300D93A03 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2219974A1EA67C400010F816 /* Tools */,
 				22B395A41EA5FE38003948B4 /* Statistics */,
 				22B3959A1EA52A4D003948B4 /* Products */,
 				22B395991EA52A41003948B4 /* PayOffs */,
@@ -195,6 +228,10 @@
 		22D64D021EA2210D00D93A03 /* Generators */ = {
 			isa = PBXGroup;
 			children = (
+				2219974F1EA67F750010F816 /* Normals.cpp */,
+				2219974C1EA67CAB0010F816 /* RandomBase.cpp */,
+				221997521EA68DAF0010F816 /* ParkMiller.cpp */,
+				221997551EA6949D0010F816 /* AntiThetic.cpp */,
 				22D64D041EA2222000D93A03 /* Random.cpp */,
 			);
 			path = Generators;
@@ -203,6 +240,10 @@
 		22D64D031EA2212300D93A03 /* Generators */ = {
 			isa = PBXGroup;
 			children = (
+				221997501EA67F750010F816 /* Normals.hpp */,
+				221997531EA68DAF0010F816 /* ParkMiller.hpp */,
+				221997561EA6949D0010F816 /* AntiThetic.hpp */,
+				2219974D1EA67CAB0010F816 /* RandomBase.hpp */,
 				22D64D051EA2222000D93A03 /* Random.hpp */,
 			);
 			path = Generators;
@@ -282,15 +323,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B395971EA50912003948B4 /* PiecewiseConstantParameter.cpp in Sources */,
+				221997491EA66BFF0010F816 /* Arrays.cpp in Sources */,
 				22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */,
+				221997541EA68DAF0010F816 /* ParkMiller.cpp in Sources */,
 				228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */,
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
 				221997461EA60C0D0010F816 /* ConvergenceTable.cpp in Sources */,
+				2219974E1EA67CAB0010F816 /* RandomBase.cpp in Sources */,
 				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
 				221997431EA605470010F816 /* Wrapper.cpp in Sources */,
 				22B395A81EA5FE68003948B4 /* StatisticsMC.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
+				221997571EA6949D0010F816 /* AntiThetic.cpp in Sources */,
 				22B395941EA5038B003948B4 /* Parameters.cpp in Sources */,
+				221997511EA67F750010F816 /* Normals.cpp in Sources */,
 				22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +434,7 @@
 		2292F0DA1EA2183E006B2473 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "RANGE_CHECKING=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
