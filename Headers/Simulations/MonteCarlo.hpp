@@ -16,11 +16,14 @@
 #include "VanillaOption.hpp"
 #include "Parameters.hpp"
 #include "PiecewiseConstantParameter.hpp"
+#include "StatisticsMC.hpp"
+#include "ConvergenceTable.hpp"
 
-double SimpleMonteCarlo(const VanillaOption& TheOption,
+void SimpleMonteCarlo(const VanillaOption& TheOption,
                         double Spot,
                         const ParametersConstant& Vol,
                         const ParametersConstant& r,
-                        unsigned long NumberOfPaths);
+                        unsigned long NumberOfPaths,
+                        StatisticsMC& gatherer);
 
 #endif /* MonteCarlo_hpp */
