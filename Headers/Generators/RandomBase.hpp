@@ -30,6 +30,7 @@ public:
     
     virtual void GetGaussians(MJArray& variates);
     virtual void ResetDimensionality(unsigned long NeWDimensionality);
+    virtual ~RandomBase(){}
 };
 
 unsigned long RandomBase::GetDimensionality() const
