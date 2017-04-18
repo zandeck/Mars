@@ -12,6 +12,7 @@
 		22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B3958F1EA4F92B003948B4 /* PayOffBridge.cpp */; };
 		22B395941EA5038B003948B4 /* Parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B395921EA5038B003948B4 /* Parameters.cpp */; };
 		22B395971EA50912003948B4 /* PiecewiseConstantParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B395951EA50912003948B4 /* PiecewiseConstantParameter.cpp */; };
+		22B395A81EA5FE68003948B4 /* StatisticsMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22B395A61EA5FE68003948B4 /* StatisticsMC.cpp */; };
 		22D64D061EA2222000D93A03 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D041EA2222000D93A03 /* Random.cpp */; };
 		22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D091EA225E200D93A03 /* MonteCarlo.cpp */; };
 		22D64D101EA22CDE00D93A03 /* PayOffs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D64D0E1EA22CDE00D93A03 /* PayOffs.cpp */; };
@@ -40,6 +41,8 @@
 		22B395931EA5038B003948B4 /* Parameters.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parameters.hpp; sourceTree = "<group>"; };
 		22B395951EA50912003948B4 /* PiecewiseConstantParameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PiecewiseConstantParameter.cpp; sourceTree = "<group>"; };
 		22B395961EA50912003948B4 /* PiecewiseConstantParameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PiecewiseConstantParameter.hpp; sourceTree = "<group>"; };
+		22B395A61EA5FE68003948B4 /* StatisticsMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatisticsMC.cpp; sourceTree = "<group>"; };
+		22B395A71EA5FE68003948B4 /* StatisticsMC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StatisticsMC.hpp; sourceTree = "<group>"; };
 		22D64D041EA2222000D93A03 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
 		22D64D051EA2222000D93A03 /* Random.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Random.hpp; sourceTree = "<group>"; };
 		22D64D091EA225E200D93A03 /* MonteCarlo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarlo.cpp; sourceTree = "<group>"; };
@@ -137,9 +140,26 @@
 			path = PayOffs;
 			sourceTree = "<group>";
 		};
+		22B395A41EA5FE38003948B4 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				22B395A61EA5FE68003948B4 /* StatisticsMC.cpp */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		22B395A51EA5FE49003948B4 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				22B395A71EA5FE68003948B4 /* StatisticsMC.hpp */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
 		22D64CF91EA2198200D93A03 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				22B395A51EA5FE49003948B4 /* Statistics */,
 				22B3959D1EA52BAE003948B4 /* PayOffs */,
 				22B3959C1EA52BA3003948B4 /* Parameters */,
 				22B3959B1EA52B98003948B4 /* Products */,
@@ -152,6 +172,7 @@
 		22D64CFA1EA2199300D93A03 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				22B395A41EA5FE38003948B4 /* Statistics */,
 				22B3959A1EA52A4D003948B4 /* Products */,
 				22B395991EA52A41003948B4 /* PayOffs */,
 				22B395981EA529BF003948B4 /* Parameters */,
@@ -255,6 +276,7 @@
 				228EDE8A1EA4E52A0007645B /* VanillaOption.cpp in Sources */,
 				22D64D0B1EA225E200D93A03 /* MonteCarlo.cpp in Sources */,
 				22D64D061EA2222000D93A03 /* Random.cpp in Sources */,
+				22B395A81EA5FE68003948B4 /* StatisticsMC.cpp in Sources */,
 				2292F0D61EA2183E006B2473 /* main.cpp in Sources */,
 				22B395941EA5038B003948B4 /* Parameters.cpp in Sources */,
 				22B395911EA4F92B003948B4 /* PayOffBridge.cpp in Sources */,
