@@ -37,19 +37,18 @@ int main(int argc, const char * argv[]) {
     
     
     PayOffCall thePayOffCall(Strike);
-    PayOffPut thePayOffPut(Strike);
-    PayOffDigit thePayOffDigit(Strike);
     
     VanillaOption theCall(thePayOffCall, Expiry);
-    VanillaOption thePut(thePayOffPut, Expiry);
-    VanillaOption theDigit(thePayOffDigit, Expiry);
     
     StatisticsMean gatherer;
     ConvergenceTable gathererTwo(gatherer);
     
+    RandomParkMiller generator(1);
+    AntiThetic GenTwo(generator);
+    
     start = clock();
     
-    SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths, gathererTwo);
+    SimpleMonteCarlo(theCall, Spot, Vol, r, NumberOfPaths, gathererTwo, GenTwo);
     duration = (clock() - start) / (double) CLOCKS_PER_SEC;
     
     cout << "Time for pricing the options : " << duration << endl;

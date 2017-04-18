@@ -13,7 +13,8 @@ void SimpleMonteCarlo(const VanillaOption& TheOption,
                         const ParametersConstant& Vol,
                         const ParametersConstant& r,
                         unsigned long NumberOfPaths,
-                        StatisticsMC& gatherer)
+                        StatisticsMC& gatherer,
+                        RandomBase& generator)
 {
     double Expiry = TheOption.GetExpiry();
     double variance = Vol.IntegralSquare(0, Expiry);
@@ -24,9 +25,11 @@ void SimpleMonteCarlo(const VanillaOption& TheOption,
     double discounting = exp(-r.Integral(0, Expiry));
     double thisSpot;
     
+    MJArray VariateArray(1);
+    
     for (unsigned long i = 0; i < NumberOfPaths; i++) {
-        double thisGaussian = GetOneGaussianByBoxMuller();
-        thisSpot = movedSpot * exp(rootVariance * thisGaussian);
+        generator.GetGaussians(VariateArray);
+        thisSpot = movedSpot * exp(rootVariance * VariateArray[0]);
         
         double thisPayoff = TheOption.OptionPayOff(thisSpot);
         gatherer.DumpOneResult(thisPayoff * discounting);
